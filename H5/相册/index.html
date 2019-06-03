@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/zepto.js"></script>
+  <title>相册</title>
+  <script>
+    // 750/100 = w / x
+    // 前提是有 meta viewport标签
+    let x = 100 * (document.documentElement.clientWidth || document.body.clientWidth) / 750;
+    document.documentElement.style.fontSize = x + 'px';
+  </script>
+
+</head>
+
+<body>
+  <div class="music_icon"></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!---------- slide1 --------------------->
+      <div class="swiper-slide slide1">
+        <img src="./imgs/back.png" class="backImg ani" swiper-animate-effect="twisterInUpDown" swiper-animate-duration="0.5s">
+        <img src="./imgs/2222.webp" class="img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s">
+        <span class="z ani" swiper-animate-effect="run" swiper-animate-duration="0.5s">致</span>
+        <span class="q ani" swiper-animate-effect="play" swiper-animate-duration="1s">青</span>
+        <span class="c ani" swiper-animate-effect="play" swiper-animate-duration="1s">春</span>
+        <div class="skew_box">
+          <span class="text ani" swiper-animate-effect="run2" swiper-animate-duration="0.5s">纪 / 念 / 相 / 册</span>
+        </div>
+      </div>
+      <!---------- slide2 --------------------->
+      <div class="swiper-slide slide2">
+        <img src="./imgs/back.png" class="backImg ani" swiper-animate-effect="run" swiper-animate-duration="0.5s">
+        <img src="./imgs/2222.webp" alt="" class="img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s"
+          swiper-animate-delay="0.3s">
+        <span class="z ani" swiper-animate-effect="run" swiper-animate-duration="0.5s"
+          swiper-animate-delay="0.3s">致</span>
+        <span class="q ani" swiper-animate-effect="play" swiper-animate-duration="1s">青</span>
+        <span class="c ani" swiper-animate-effect="play" swiper-animate-duration="1s">春</span>
+        <div class="skew_box">
+          <span class="text ani" swiper-animate-effect="runSpan" swiper-animate-duration="0.5s"
+            swiper-animate-delay="0.3s">纪 / 念 / 相 / 册</span>
+        </div>
+      </div>
+      <!---------- slide3 --------------------->
+      <div class="swiper-slide slide3">
+        <img src="./imgs/back.png" class="backImg ani" swiper-animate-effect="run" swiper-animate-duration="0.5s">
+        <img src="./imgs/2222.webp" alt="" class="img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s"
+          swiper-animate-delay="0.3s">
+        <span class="z ani" swiper-animate-effect="run" swiper-animate-duration="0.5s"
+          swiper-animate-delay="0.3s">致</span>
+        <span class="q ani" swiper-animate-effect="play" swiper-animate-duration="0.5s">青</span>
+        <span class="c ani" swiper-animate-effect="play" swiper-animate-duration="0.5s">春</span>
+        <div class="skew_box">
+          <span class="text ani" swiper-animate-effect="run2" swiper-animate-duration="0.5s"
+            swiper-animate-delay="0.3s">纪
+            / 念 / 相 / 册</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <audio src="./imgs/恋爱ing.m4a" id="audio"></audio>
+
+  <script src="./js/swiper.animate.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
